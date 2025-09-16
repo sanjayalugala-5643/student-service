@@ -40,7 +40,7 @@ public class StudentController {
     public  String updated(@PathVariable long id ,@RequestBody Student updates){
         return studentService.updated(id,updates);
    }
-    @PutMapping("/update/{id}")
+    /*@PutMapping("/update/{id}")
     public String updateStudent(
             @PathVariable Long id,
             @RequestParam String name,
@@ -49,7 +49,7 @@ public class StudentController {
             @RequestParam String phone_number) {
         studentService.updateAgeAndPhoneNumber(id, name ,student_class ,age, phone_number);
         return "Student updated successfully!";
-    }
+    } */
 
     @GetMapping("/page")
     public Page<Student> getStudent(

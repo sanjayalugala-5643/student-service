@@ -84,7 +84,7 @@ public class StudentService {
     }
 
 
-    @Transactional
+   /* @Transactional
     public void updateAgeAndPhoneNumber(Long id, String name, Integer student_class, Integer age, String phone_number) {
         Student student = studentRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Student not found with id: " + id));
@@ -92,7 +92,7 @@ public class StudentService {
         student.setStudent_class(student_class);
         student.setAge(age);
         student.setPhone_number(phone_number);
-    }
+    } */
 
     
     public Page<Student> getStudent(int page , int size){
